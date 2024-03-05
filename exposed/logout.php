@@ -1,5 +1,5 @@
 <?php
-require_once('framework.php');
+require_once('../framework.php');
 $title = "Déconnexion";
 // session_destroy();
 session_destroy_all();

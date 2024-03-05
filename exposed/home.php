@@ -1,5 +1,5 @@
 <?php
-require_once('framework.php');
+require_once('../framework.php');
 $title = "Accueil";
 
 if (!isset($_SESSION['user.id'])) { // PAS AUTHENTIFIE => CONNEXION

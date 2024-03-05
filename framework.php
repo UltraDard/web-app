@@ -2,10 +2,10 @@
 if (session_exist()) {
     session_start();
 }
-$database = new SQLite3('database.db3');
+$database = new SQLite3('../database.db3');
 
 // SQL
-function sql_exec($database,$query) {
+/* function sql_exec($database,$query) {
     return $database->exec($query);
 } 
 function sql_select($database,$select) {
@@ -15,25 +15,31 @@ function sql_select($database,$select) {
         $rows[] = $row;
     }
     return $rows;
-}
+} */
 
 
-/* function sql_exec($database,$query,$tabNameBind, $tabValueBind) {
-    $database->prepare($query); 
+function sql_exec($database,$query,$tabNameBind, $tabValueBind) {
+    $statement = $database->prepare($query); 
+    var_dump($tabNameBind);
     for ($i=0; $i < count($tabValueBind); $i++) { 
-        $database->bindValue(":".$tabNameBind[$i], $tabValueBind[$i]); 
+        $statement->bindValue(":".$tabNameBind[$i], $tabValueBind[$i]); 
     }
-    return $database->execute();
+    return $statement->execute();
 }
 
-function sql_select($database,$select) {
-    $results = $database->query($select);
+function sql_select($database,$select,$tabNameBind, $tabValueBind) {
+    $statement = $database->prepare($select);
+    for ($i=0; $i < count($tabValueBind); $i++) { 
+        $statement->bindValue(":".$tabNameBind[$i], $tabValueBind[$i]); 
+    }
+    $result = $statement->execute();
     $rows=[];
-    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
+    while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
         $rows[] = $row;
     }
     return $rows;
-} */
+    
+} 
 
 // HTTP
 function http_get_method() {

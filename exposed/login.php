@@ -1,5 +1,5 @@
 <?php
-require_once('framework.php');
+require_once('../framework.php');
 $title = "Connexion";
 if (isset($_SESSION['user.id'])) { // AUTHENTIFIE => HOME
     http_redirection('home.php');
@@ -31,7 +31,9 @@ function manage_post_with_user($title,$database) {
         $_SESSION['user.id'] = $user_access['id'];
         $_SESSION['user.firstName'] = $user_access['first_name'];
         $_SESSION['user.lastName'] = $user_access['last_name'];
+        user_raz_failures($database,$user_access['failures']);
         http_redirection('home.php'); // => ACCUEIL
+
     }
     // AUTHENTIFICATION KO
     $user_state = user_state($database);
@@ -55,7 +57,7 @@ function manage_post_with_user($title,$database) {
     html_login_send_page($title,html_form($title,TRUE)); // => CONNEXION ERROR
 }
 
-function user_block($database) {
+/* function user_block($database) {
     $user_block_query = <<<END
 UPDATE user SET blocked = 1 WHERE user = '{$_POST['user']}'
 END;
@@ -78,32 +80,6 @@ END;
     return $user_state[0];
 }
 
-
-
-/* function user_block($database) {
-    $user_block_query = <<<END
-UPDATE user SET blocked = 1 WHERE user =:user'
-END;
-    sql_exec($database,$user_block_query,['user'],[$_POST['user']]);
-}
-function user_increment_failures($database) {
-    $user_increment_failures_query = <<<END
-UPDATE user SET failures = failures + 1 WHERE user = :user'
-END;
-        sql_exec($database,$user_increment_failures_query,['user'],[$_POST['user']]);
-}
-
-function user_state($database) {
-    $user_state_query = <<<END
-SELECT * FROM user WHERE user =:user'
-END;
-    $user_state = sql_select($database,$user_state_query,['user'],[$_POST['user']]);
-    if (count($user_state) === 0) {
-        return FALSE;
-    }
-    return $user_state[0];
-} */
-
 function user_access($database) {
     $user_access_query = <<<END
 SELECT * FROM user WHERE user = '{$_POST['user']}' AND password =  '{$_POST['password']}' AND blocked = 0
@@ -116,12 +92,56 @@ END;
     return FALSE;
 }
 
-function user_raz_failures($database) {
-    $user_raz_failures_query = <<<END
+function user_raz_failures($database,$failures) {
+    if($failures != 0){
+        $user_raz_failures_query = <<<END
 UPDATE user SET failures = 0 WHERE user = '{$_POST['user']}'
 END;
     sql_exec($database,$user_raz_failures_query);
+     }
+    
+}  */
+
+
+
+function user_block($database) {
+    $user_block_query = "UPDATE user SET blocked = 1 WHERE user =:user";
+    sql_exec($database,$user_block_query,['user'],[$_POST['user']]);
+}
+function user_increment_failures($database) {
+    $user_increment_failures_query = "UPDATE user SET failures = failures + 1 WHERE user = :user";
+        sql_exec($database,$user_increment_failures_query,['user'],[$_POST['user']]);
+}
+
+function user_state($database) {
+    $user_state_query = "SELECT * FROM user WHERE user =:user;";
+    $user_state = sql_select($database,$user_state_query,['user'],[$_POST['user']]);
+    if (count($user_state) === 0) {
+        return FALSE;
+    }
+    return $user_state[0];
 } 
+
+function user_access($database) {
+    $user_access_query = "SELECT * FROM user WHERE user =:user AND password =:password AND blocked = 0";
+    
+    $sql_result=sql_select($database,$user_access_query,['user','password'],[$_POST['user'],$_POST['password']]);
+    if ($sql_result) {
+        //return sql_select($database,$user_access_query)[0];
+        return $sql_result[0];
+    }
+    return FALSE;
+}
+
+function user_raz_failures($database) {
+    $user_raz_failures_query = "UPDATE user SET failures = 0 WHERE user = :user";
+
+    sql_exec($database,$user_raz_failures_query,['user'],[$_POST['user']]);
+} 
+
+
+
+
 
 function html_login_send_page($title,$main_html) {
     html_send_page($title,$main_html,FALSE); // pas de header ni footer

@@ -1,5 +1,5 @@
 <?php
-require_once('framework.php');
+require_once('../framework.php');
 session_destroy_all();
 
 $title = "Reset";
