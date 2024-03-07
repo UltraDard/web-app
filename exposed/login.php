@@ -183,8 +183,13 @@ $modal
 <div>
 <input type="submit" id="login" name="login" class="inverse" value="$titre">
 </div>
+
 </div>
 </fieldset>
+<div>
+<br>
+<a href='inscription.php'>S'inscrire</a>
+</div>
 </form>
 END;
     return $form;

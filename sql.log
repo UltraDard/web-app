@@ -346,3 +346,21 @@ VALUES
 
 07/03/2024 - 10:54:48, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
 07/03/2024 - 10:54:48, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 11:01:25, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('test','test','test','$2y$10$ok9I16.wbwCI4fCbFlTtb.1z8M.uXxB0fIBevYIl1fozUJq8Xh.aa',0);
+07/03/2024 - 11:02:13, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (test,test,test,$2y$10$XbCbFdsSpSIrxJ8.A7IVn.gaUd/VRkn03W6subAsv/RJtj97F6zLG,0);
+07/03/2024 - 11:02:27, ::1 , SELECT * FROM user WHERE user =test AND blocked = 0
+07/03/2024 - 11:02:27, ::1 , UPDATE user SET failures = 0 WHERE user = test
+07/03/2024 - 12:07:40, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:07:40, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 12:08:31, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (test,test,test,$2y$10$GTy9n0JwuiDuCVmgZvp63.fUVs8wssjq1TChrtvCAC5aBfHgxLeEa,0);
+07/03/2024 - 12:19:21, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:19:21, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 12:21:33, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (test1,Max,Doualle,$2y$10$Al6CIJSHZWmzYGmgdlIK8OiI6YxcAJEMywmEnOMd8au/JuBr9o9Ba,0);
+07/03/2024 - 12:21:39, ::1 , SELECT * FROM user WHERE user =test1 AND blocked = 0
+07/03/2024 - 12:21:39, ::1 , UPDATE user SET failures = 0 WHERE user = test1
+07/03/2024 - 12:22:08, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (thib,Thibaut,Hilaire,$2y$10$OoDPAvx6Jtf1v1j8WZ0uUupJr1v.YxcXG0RGN33TldiQaoB0vhoEa,0);
+07/03/2024 - 12:22:12, ::1 , SELECT * FROM user WHERE user =thib AND blocked = 0
+07/03/2024 - 12:22:12, ::1 , SELECT * FROM user WHERE user =thib;
+07/03/2024 - 12:22:12, ::1 , UPDATE user SET failures = failures + 1 WHERE user = thib
+07/03/2024 - 12:22:25, ::1 , SELECT * FROM user WHERE user =thib AND blocked = 0
+07/03/2024 - 12:22:25, ::1 , UPDATE user SET failures = 0 WHERE user = thib
