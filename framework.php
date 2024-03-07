@@ -196,4 +196,11 @@ function addLog($sql)  {
     file_put_contents('../sql.log', $sql, FILE_APPEND);
 }
 
-
+function generateSalt() {
+    $caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    $chaineAleatoire = '';
+    for ($i = 0; $i < 50; $i++) {
+      $chaineAleatoire .= $caracteres[rand(0, strlen($caracteres) - 1)];
+    }
+    return $chaineAleatoire;
+}

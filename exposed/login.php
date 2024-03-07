@@ -136,7 +136,7 @@ function user_access($database) {
     
     $sql_result=sql_select($database,$user_access_query,$tab);
     if ($sql_result) {
-        $password = "verif".$_POST['password'];
+        $password = $sql_result[0]['salt'].$_POST['password'];
         //return sql_select($database,$user_access_query)[0];
         if( password_verify($password,$sql_result[0]['password']) ){
             return $sql_result[0];

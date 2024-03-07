@@ -364,3 +364,349 @@ VALUES
 07/03/2024 - 12:22:12, ::1 , UPDATE user SET failures = failures + 1 WHERE user = thib
 07/03/2024 - 12:22:25, ::1 , SELECT * FROM user WHERE user =thib AND blocked = 0
 07/03/2024 - 12:22:25, ::1 , UPDATE user SET failures = 0 WHERE user = thib
+07/03/2024 - 12:37:16, ::1 , DELETE FROM user
+07/03/2024 - 12:37:16, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$XhTCrhNks7H83zkepPKTAuSnZpv.dJU4tl5/zsqQeKzm9cafKgzry',0),
+(2,'jbon','Jean','BON','$2y$10$rLjy5Q01NSyn.xYZPsW2zu5C41U3Ur/Bionhe9LwrUiyyaajqmzVK',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$niOIY.Ll.JAeJUcrf7FIneHD7UHkNeav3v2KCqFerTiPdeG.zS6iG',0),
+(4,'mpage','Marc','PAGE','$2y$10$XGaUhpPelqYM2BjNglNuSeR44RVoU81hzCXfU8INyDPzJeoeON4ra',1)
+
+07/03/2024 - 12:37:41, ::1 , DELETE FROM user
+07/03/2024 - 12:37:41, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$ySXfDmSRaBlAQXymadUalORe5rTIYvH88vJ03o5HN47OcL1bqeTOO',0),
+(2,'jbon','Jean','BON','$2y$10$NrbgkdCfpZtgKBewX9zD8.IkDOimh7Vcajz7PsEVWK7y5I8nzF39W',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$KInOwFnlHBXXhItMjjWf8unImNEI.6q2vzYhec1zi8t4ykL/BA8Ea',0),
+(4,'mpage','Marc','PAGE','$2y$10$Gb7xU5k/NA43Qka971GFHOJ25EqbM9Rb236/pvOrVXE4QxKM84tly',1)
+
+07/03/2024 - 12:38:16, ::1 , DELETE FROM user
+07/03/2024 - 12:38:16, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$.RhWmu3ATzgYE6mK9cDOeetZz2UmtHEZt1TP3Vn6Cn/cw7KFys6Ee',0),
+(2,'jbon','Jean','BON','$2y$10$E2Wm0fVQaCMh0fT37BmMkucqaJbdiirJGFEtBBTzXWwffUFe/UZ/2',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$SmEa03kID/6zj73OuEoUuunFycEJQH/HUJ.lusRTiZLKjG8XXlOr2',0),
+(4,'mpage','Marc','PAGE','$2y$10$omyRkiCIZnedm6Wl/nTdTeUp1fjgIkSalzlUX1qtYhnA0D5l2L.VW',1)
+
+07/03/2024 - 12:38:16, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:16, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:17, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:17, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:18, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:18, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:18, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:38:19, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:38:19, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:38:34, ::1 , DELETE FROM user
+07/03/2024 - 12:38:35, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$9FgcnvWA./1dEZNgsZGV9O1AJBWNwqf5HY0A7TNBwgrp5QDwNL8ai',0),
+(2,'jbon','Jean','BON','$2y$10$GhJuYaVBoFUl/qSr1tj35.e3dYhhGTjKpOwWYiNJxonqkkBRrtjJK',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$e18Gf10RQEyweAHIRGXUweHlySTXlL60UmwJp/XWweHM.gCVhR9JO',0),
+(4,'mpage','Marc','PAGE','$2y$10$jcj0mLXnYSCBe.xl3E5JVOXlq1BXnBSxoIFeL4TMAtDRgzWyd8Onq',1)
+
+07/03/2024 - 12:38:35, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:35, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:36, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:36, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:37, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:38:37, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:38:38, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:38:38, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:38:38, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:39:45, ::1 , DELETE FROM user
+07/03/2024 - 12:39:45, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$mTSIkT/zg6oYYjjO1G6yQu1UrkqUBjy5xDdEfNtjvkwyKNL/wHYD2',0),
+(2,'jbon','Jean','BON','$2y$10$vSS1AR5/iH0OSPONv1A3ROBpbc837SaTMLM3TbV7a4WvIIs/gywka',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$biPesVCmxn5qdI7ovjI3R.lMsynWZ8NuTveLce5K7gPmUtyIlmVHu',0),
+(4,'mpage','Marc','PAGE','$2y$10$HfOxaC7loLRs2WiTzTaYVe4T.hiKVrGGZ3lydmnjvJX290LiO2l.6',1)
+
+07/03/2024 - 12:39:46, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:39:46, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:39:46, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:39:46, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:39:47, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:39:47, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:39:48, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:39:48, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:39:48, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:41:06, ::1 , DELETE FROM user
+07/03/2024 - 12:41:06, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$czILg3De8XFriChHD.KgaOyHUhpPypumNEU3ZhZNvTCkwNFFXT/Lu',0),
+(2,'jbon','Jean','BON','$2y$10$tPtROoVxNyFn4TjxWtPak.Uq2woCb6umknYZ7zudRPieAqRFYtTgi',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$iytnD7J5EBKvRIHwc4VaPeC9tV/FqOqKkUkM01ho3enVuDltq2WrO',0),
+(4,'mpage','Marc','PAGE','$2y$10$66Kj/H1vgu8cgk9rhxB9o.lAJaTOqTS.xwWR1C8TSIWFnh6KQT5yS',1)
+
+07/03/2024 - 12:41:06, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:06, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:07, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:07, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:08, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:08, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:09, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:41:09, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:41:09, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:41:36, ::1 , DELETE FROM user
+07/03/2024 - 12:41:37, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$HiMMfmlVg9Hr7SY3397yRulnmkIvWbw0W0He0pbkHBwMeZg4TJHJ6',0),
+(2,'jbon','Jean','BON','$2y$10$KrwzuUMU20YpYfM342oqNu.2P8COd5fP4lhnEewrzN9hZNvFhLDg6',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$ITMP6B.4g7V6VIhDW4uGuuIOtu1F9AbD/7SA27uTvhlM3KXKiy2z2',0),
+(4,'mpage','Marc','PAGE','$2y$10$Au3I9W9OfDwAOFBLVBDgmOXDcq5JR255zqNSQ7gLWLhJl3x8hUNDe',1)
+
+07/03/2024 - 12:41:37, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:37, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:38, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:38, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:39, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:39, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:40, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:41:40, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:41:40, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:41:57, ::1 , DELETE FROM user
+07/03/2024 - 12:41:57, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$4Wp.LkdAbCmsE8ZsXI5Z/elEdJEZ0k1DXb1ETFfkVW2BBnjyul7j.',0),
+(2,'jbon','Jean','BON','$2y$10$UeGeDf5jPfRV7l3TDPg2iuHhhedjidmH30Xsv8pwOJl0dALANxRdG',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$U9Q8WmVupZ9KaJ78frPTf.bgK/FcY7/UFnPu1PiW30U91RI6l5vjK',0),
+(4,'mpage','Marc','PAGE','$2y$10$1ju3o1GSPQZnrxcTHA4SKuTw5VvDwhU2b1y5HAzVlqzfuunag0cyK',1)
+
+07/03/2024 - 12:41:57, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:57, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:58, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:58, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:41:59, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:41:59, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:42:00, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:42:00, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:42:00, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:42:13, ::1 , DELETE FROM user
+07/03/2024 - 12:42:13, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$9qZ8IB7RHLBLsONrQNzVOuwQs1KNXxaNNF0hNXmXUTxhj.g8hWblO',0),
+(2,'jbon','Jean','BON','$2y$10$M6lh.rZWs0QxY/yd0e2ibue9iOoEO.xmy8NVzAi4pX.S.pcCNJz/.',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$xKBCCbZU4fIonzJCEwQKyeTPPWuaqAIWMTPYmSjUU9TgrpO0GT.Se',0),
+(4,'mpage','Marc','PAGE','$2y$10$.CMefnH./hg1IMwGUOFZMeU0eh3WRzXtzQ4vJDEDzBhRzuD73hg9.',1)
+
+07/03/2024 - 12:42:13, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:42:13, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:42:14, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:42:14, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:42:15, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 12:42:15, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 12:42:16, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 12:42:16, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 12:42:16, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 12:43:04, ::1 , DELETE FROM user
+07/03/2024 - 12:43:05, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$K2n6ep5Shsr24GMo7qBLXunUE47xvpwuICAlNbbekhHmJH3GV2etO',0),
+(2,'jbon','Jean','BON','$2y$10$2xjLfoL2NA7h3qjT3oEqKeGi7tmvyY1wQYcfLPBEaktgqOnNiLxW.',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$0pxUxHk4d59qgtiBoPEEzutQq7tFux.ADgk6C.wrshNyUmJ7rPgRq',0),
+(4,'mpage','Marc','PAGE','$2y$10$9TD4UYwYECD1dWn1q2y03unSlxbywZPswbLNYYzmUMVPEWnvmArn2',1)
+
+07/03/2024 - 12:43:56, ::1 , DELETE FROM user
+07/03/2024 - 12:43:56, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$EEkFBgglfSMVkfz4grKpu.blxAW2K6GvozMZpxtCPueO0S9Yl0BMS',0),
+(2,'jbon','Jean','BON','$2y$10$2k4X9XIs.GInu7EBTmr5j.KtrvvvF2eP/GcnZer9mGcMTraINkNPy',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$sV662jxFXEZiaVZGYHSRMOJi0wutT.NrXyyy3UD0DHRhdQhqTs0OK',0),
+(4,'mpage','Marc','PAGE','$2y$10$63yAhztSqsVoxGeO8Jcm9upWkSYW/6LpmKQLbdbmqtlnH8o4GF4gm',1)
+
+07/03/2024 - 12:44:06, ::1 , DELETE FROM user
+07/03/2024 - 12:44:06, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$k8sjhyHDk7yADdZJimRPV.beJtPnE/GdC1uezueZ8rODnA2N1blE.',0),
+(2,'jbon','Jean','BON','$2y$10$djLwHIu10Zc7zT6Tf5UztuhB1KjCponGUxrKhns90.VaiWBbeT1Da',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$AwhSKWwH3c4PEydiYln4I.5pIseMdoZ99r4smNouhrjLZ23NcCLZ.',0),
+(4,'mpage','Marc','PAGE','$2y$10$iuD3kqy10ene60OuN1ymReZbUdyP9Sa09h6/rA7ErQbj285QpoC9a',1)
+
+07/03/2024 - 12:44:27, ::1 , DELETE FROM user
+07/03/2024 - 12:44:27, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$joIDDWV008f/JOUmzEQKSeKCXAGS1K2wSuuJ8PFYxa2qtDOFgP3sa',0),
+(2,'jbon','Jean','BON','$2y$10$x4bPWeSYj.AgzGrZ66yMyeHfDa2YbB5J4EVqhLAzP//uQqrJGHvai',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$tV9I.pVcs92OIL2sghtKnOGmEAkM6cck5hD/ZtlM3r2kjidkWU7KO',0),
+(4,'mpage','Marc','PAGE','$2y$10$5CZT5ubLje5sw.YUKKZn7uOWpxLbXdsz8xJYRmgZfKjWl3yy.6LjC',1)
+
+07/03/2024 - 12:44:40, ::1 , DELETE FROM user
+07/03/2024 - 12:44:41, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$QHlijPzw3Jj7HZ98jdTjtuEwibQRAgYxfFEnFsgPAI6ntNDtzLs9S',0),
+(2,'jbon','Jean','BON','$2y$10$UnQ2o6iViA.EnT1ykFwV2e48JakpOhnxsmoMf17B1fBgL2Fmu3t7u',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$/31OC5ictFIy3OHXPiZRM.28sBgOVzukoI4Aq8wQHQ4OXNtF/b91m',0),
+(4,'mpage','Marc','PAGE','$2y$10$adDAFXu8r2ihsmbNnbhANOGEqdlLdO/FtoZTTv2.ZlNoIKEnuqvWq',1)
+
+07/03/2024 - 12:46:03, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (max,max,Doualle,$2y$10$HAe/5BS0VCK3BsHwRTsJ5.gQdATYIrkRj.iOZBvGqLv5QjFOSDkU2,0);
+07/03/2024 - 12:46:10, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:46:10, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 12:46:10, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 12:46:17, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:46:17, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 12:46:17, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 12:47:01, ::1 , DELETE FROM user
+07/03/2024 - 12:47:01, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$zE5POHVpyEzLu4BG03mqJ.f1bOPw1krdk.2rM9AspOlVgZojTPdvy',0),
+(2,'jbon','Jean','BON','$2y$10$V9MtN4whAhbeGinCaD96Qe1fj8Fwk/HChHxLa.k2Cf8DsIg0sKWM.',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$NvwOecln6XhPIVerO69YJOf8M9ugBUwqW4UyFRlwkUPUmGpx6iFiq',0),
+(4,'mpage','Marc','PAGE','$2y$10$5sl8FlexbZMxFhhE58P04.gsshQqZLJ01vrAQ4c81T5DgKhdRpWJu',1)
+
+07/03/2024 - 12:47:10, ::1 , SELECT * FROM user WHERE user =kqui AND blocked = 0
+07/03/2024 - 12:47:10, ::1 , UPDATE user SET failures = 0 WHERE user = kqui
+07/03/2024 - 12:47:27, ::1 , DELETE FROM user
+07/03/2024 - 12:47:27, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$3WptteKTHRgpjdhPO/nWweqbvurhh/3k4GAdVQP1O2jzsUyUaOEAy',0),
+(2,'jbon','Jean','BON','$2y$10$FKM2SLvvhHG1QMNUf2ygmOhC0JVuEVDUPs9bcW9Bbqp13yfmHkSu2',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$UhhuhMCFHiNzxHoDP8tZO.kRLzusRsFOIoEoMkqC1TLuAa5fJbOta',0),
+(4,'mpage','Marc','PAGE','$2y$10$9fx7/rMhFY5ctfIzps9fyuwE7UvQwMMVe.eT2oIwM7ZixJaJSogJa',1)
+
+07/03/2024 - 12:48:12, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (max,Max,Doualle,$2y$10$MrgZ37Z73vfrUMZHAK8vX.vY0HgJ38hXKBznHwZ3pi4AQY0a8Ylk2,0);
+07/03/2024 - 12:48:16, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:48:16, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 12:48:32, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (maxx,Max,Doualle,$2y$10$jDPWRXetbpWC2d/KX5oUxubnk2M45nfGWVg5KmYW9uFrSfidkryMe,0);
+07/03/2024 - 12:48:38, ::1 , SELECT * FROM user WHERE user =maxx AND blocked = 0
+07/03/2024 - 12:48:39, ::1 , UPDATE user SET failures = 0 WHERE user = maxx
+07/03/2024 - 12:49:40, ::1 , DELETE FROM user
+07/03/2024 - 12:49:40, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$2W7eG5HVaM7iUFPG2rrgwuy0kquBe.qLn7vkCAH9/9D3WwD/STby.',0),
+(2,'jbon','Jean','BON','$2y$10$nMfnu4XJUrZi82yGl18Yq.uQfAfnzk4uvbQDSNJznHo583ljq/nBC',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$iT.fNNlEISuDleE9gJe8AOqBeY/q9kAyxIS/zQE7mW0ouje97d6Ja',0),
+(4,'mpage','Marc','PAGE','$2y$10$9jFMnse44JPu/YwLmupLfOtNdG7k9nbICAhghGYqsRz53RIOSLLmi',1)
+
+07/03/2024 - 12:49:49, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (max,Max,Doualle,$2y$10$iu8gFsUxGWnWASTeWee7FeOGZEb/2m8EBveX6Luap.njJzI2AiFnW,0);
+07/03/2024 - 12:50:09, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:50:09, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 12:50:48, ::1 , DELETE FROM user
+07/03/2024 - 12:50:48, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$RtPpJAPRwIP0NqdXe5afpOZ8l6bvBrrkaS2rsGDwKex.JAj6wteB.',0),
+(2,'jbon','Jean','BON','$2y$10$QM3RCOlACy7ZfGZz13fSFeXHxmcT9kgTCsXRAAyXIUqnAksir/6NS',0),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$Na9NjKGlFCqNS0SEL3AHY.q1F6nv1KtrBtTl9BQIj9WqssVjPU5KS',0),
+(4,'mpage','Marc','PAGE','$2y$10$5Gd0JUhqwkyZ/zm/Aehb2OP3QNV24cRjQjdFTRdHxBOYDQHjzJw3m',1)
+
+07/03/2024 - 12:51:01, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES (max,Max,Doualle,$2y$10$jyX4b1irMdej7UvLuPnvC.3EWBPXdJ1oToSrgCxWBlNdCH64qFYvC,0);
+07/03/2024 - 12:51:06, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 12:51:06, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 12:54:04, ::1 , DELETE FROM user
+07/03/2024 - 12:54:05, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$oC06EzBYu9tVYsfARJvMT.wmdQtwU3T5uvrYd0Z57inffp388m7H.',0,'1'),
+(2,'jbon','Jean','BON','$2y$10$P8OG0GiDAeo3I3ltUMQafumAqXaFg32aNKixSSu3FwkQvMaZVbOHe',0,'2'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$p6rc/rQRuwfk36Hbt7CKUedSQRWLCZQOBiuaQn7hQyFXxVhDahJaG',0,'3'),
+(4,'mpage','Marc','PAGE','$2y$10$c5iqW3tejRfVU7E9wJ/.x.0z0bbJB46I6DS/kNF8HsslyZocHAoyi',1,'4')
+
+07/03/2024 - 12:57:52, ::1 , DELETE FROM user
+07/03/2024 - 12:57:52, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$AuaDEfkGd.lDFsoGnOkb/OojM56/dvG52w5lCwN6urhXs.xgGNHbS',0','Xc4ZhY'),
+(2,'jbon','Jean','BON','$2y$10$Si/gyAEO6FgsjtFye/tADe8FohG0LhtJ05NH32Q94C3GJYI1xocnC',0,'2','riYB93'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$tTDwhJCR0Nevq9Ij1/alye0Reuyp/OHEBw8yMsRzsMB8TjiUJFJMS',0,'3','8RPlw6'),
+(4,'mpage','Marc','PAGE','$2y$10$W7d0KZIygsLFCIXSUdSpneWXvygTy03tusSFLAilKP86TtulsB9Hm',1,'4','Q2vpVz')
+
+07/03/2024 - 12:58:33, ::1 , DELETE FROM user
+07/03/2024 - 12:58:33, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$SP5/cT.hIjkG/47emXNBje581GNOZIjKbu3qz9q6ddoozJpZRp4b.',0','tsduv1'),
+(2,'jbon','Jean','BON','$2y$10$UmXif44U6a7q3d./q0yBcec1lmJuOwjtcaCYmUUSPu62dFZJVUyiO',0,'RhtiMp'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$nDxOHbe0GfaRekInp3SQ3OzmcLjBkrGA14iKyGCpojLRzzi621gSW',0,'Buj3eW'),
+(4,'mpage','Marc','PAGE','$2y$10$ntYdFEOStqL9AsjqtU513.F1gFLQa.kP55YHQOfmlR1Mppox5gbMe',1,'VWKNXW')
+
+07/03/2024 - 12:58:57, ::1 , DELETE FROM user
+07/03/2024 - 12:58:58, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$Es2GJFROI2Z0pkClqI4nBOrreawud6H.LVAc2SoPllEYvbFwrY7Ga',0,'nZFWiI'),
+(2,'jbon','Jean','BON','$2y$10$dMsN2AgcJuRJjtNd5jw2.uKq/hhVKaSw1rUFKvTRTb3UCTTWbfa0S',0,'BZkOgN'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$Lkp44dobGM4jOLaLMp.BZO7DUp9r1MVblMvaie5vvUhZIUcd0d1Uu',0,'PNBMjS'),
+(4,'mpage','Marc','PAGE','$2y$10$9ok4HStSol/QLYb5oT5S2egX03Do7png6K9Wnj0zmJl9hAXESLh.i',1,'cYjC6X')
+
+07/03/2024 - 12:59:47, ::1 , DELETE FROM user
+07/03/2024 - 12:59:48, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$G.Ez8lgr5GPG4MB.JDE.5uggAxL9GU4ksiMN4V3Tv7GweCVQdIkb.',0,'cFB48t'),
+(2,'jbon','Jean','BON','$2y$10$RGi1NHX5z0V9xEm.H4lLKeGMirEUHTTHE5hFEiiXkuwRakcWW9MZa',0,'tc81rx'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$bc/sCMJy7Mj2cM8tw57mteETIx.sU5Wb0iTXwS6k/Z9X4UrU7Guzy',0,'Aqc2Oh'),
+(4,'mpage','Marc','PAGE','$2y$10$sXfUTwoYSOwQKPo8HdEeGuTiIpw9GT6zQ9YaveVqlzdVXiG6f1pne',1,'KkDtG3'),
+(5,'max','Max','Doualle','$2y$10$CBE1JNe2ey3f1Rr89zkrWuBFCVLC9wAbHwYBtM8S.DTgS1NpOvvX6',1,'xsrnxb')
+
+07/03/2024 - 13:02:06, ::1 , DELETE FROM user
+07/03/2024 - 13:02:06, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$e4Jh7fOJJf2URUMuCHXqleMJv4RbeDN5x6thFJWXvBvXRW5vIWxpS',0,'I2TH1A'),
+(2,'jbon','Jean','BON','$2y$10$p9UVx80jnRaNckSlVdE1juz5hIXxKOHa05UTQ7MXgMe01T7Ndkp42',0,'XHMv8M'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$8HIuQ5EyjKsejKDK8imkkuYelcZxGmr5JbnPKzVp2b3JerR5TMRSK',0,'89saKQ'),
+(4,'mpage','Marc','PAGE','$2y$10$t/BjniJcaPNxkmw7SIDK7eB7mtNLQF1r2TDPBnXxZJePR7YAYXtpu',1,'RdrhxZ'),
+(5,'max','Max','Doualle','$2y$10$QbMpDtg/8UYjWSZWu.sGUe19uIiuzEL1LGZFjMkAhmDSpMXWd0p.C',1,'pga12I')
+
+07/03/2024 - 13:02:12, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 13:02:12, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 13:02:37, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 13:02:38, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 13:02:52, ::1 , SELECT * FROM user WHERE user =kqui AND blocked = 0
+07/03/2024 - 13:02:52, ::1 , UPDATE user SET failures = 0 WHERE user = kqui
+07/03/2024 - 13:02:59, ::1 , SELECT * FROM user WHERE user =kqui AND blocked = 0
+07/03/2024 - 13:02:59, ::1 , SELECT * FROM user WHERE user =kqui;
+07/03/2024 - 13:02:59, ::1 , UPDATE user SET failures = failures + 1 WHERE user = kqui
+07/03/2024 - 13:03:18, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked,salt) VALUES (maxx,Max,Doualle,$2y$10$VFImz.v8ZF/.BLMtgqoCKOxkogTYEyuKsFXsoKWyGgRO1AavFgKP.,0,0WrLYH);
+07/03/2024 - 13:03:29, ::1 , SELECT * FROM user WHERE user =maxx AND blocked = 0
+07/03/2024 - 13:03:29, ::1 , UPDATE user SET failures = 0 WHERE user = maxx
+07/03/2024 - 13:09:00, ::1 , DELETE FROM user
+07/03/2024 - 13:09:00, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$PQH/7J7ALkWsTe5LL4iWaufqy36q41fSIifn4m3z3YwtglpSeZ5EC',0,'KF7Fyxdvgfh3wn93Z81CcHOx4scjblvTP1sWB9jGZ19RiSPFho14j5U2bNcW5QpYT7VjubysVX95Qcgg'),
+(2,'jbon','Jean','BON','$2y$10$b1IWvEoyPBM4pkQt8GAuQebNes0LornAImMdDtATW1QksK3dansXu',0,'aW4rr5B2gu4Zjp0KhYunb0XplXNWMlNdyaMDwg4Nl5j87ceXhJQOvouJ4nh4ZhzUxNBtwTijqk6oVkly'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$CxcDv4yHtH34wfmOnlAZC.g6alYX4c0f/.2JCga3/6XUWcRVq0uOW',0,'4ackp7uGoxsJkBuIR19S4ERWTmPiOiwLUbJ8w1BCxv3y5S5lHTg2e5m6uThRHTAgzjmKO7Ue579FJy46'),
+(4,'mpage','Marc','PAGE','$2y$10$2qbRMfruT09GpcfcrN6T3OQhnz4O78dlHTG1QM4UpQidSgZxeQ7ry',1,'BuT1YqEywmWqGJM4tJabMAbmcpcSWGRHdUkKvoBD6TP1kGtD8JiBgLtqlvknGDYTk3ixjE76NlYlDl99'),
+(5,'max','Max','Doualle','$2y$10$kmzD4NiRgSwwgGYs4fa4nOiqgkjfgmi4fOuKUPqJBLMgA/6gPmNE2',0,'t3b4Ad94uvdXyu7k4SAZQoRVHg0zBUEDt3ILRha0mCIml60fPpkYUOLCYRVqAjbEUOKmlTMxTuQEVMu0')
+
+07/03/2024 - 13:09:33, ::1 , DELETE FROM user
+07/03/2024 - 13:09:34, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$hwYbP/.fjL0NeIrI3N3nhOY.2SAL0lfktVpz4z/iT2lwjJxrsEAAC',0,'nBsyORu050f1Kyc6knIkiiu7u1Hc8hdmuwhgtayQxrkHMhS6yxIWjoQCBiBeQyiTkinX3KWpQuQT0YWRFNwiOgvaRq2uO2aWX0X1RR012XOdhw1fBO7c9MiooJot39peto6IimbA1r1vTL5JTe41acwiaxPYTNrsWZPGl5t8WL36eun5ONn6sGXcvGRRxhD7BCPUNmyg9eeSYlkeCe94tHAIBJCBfgC5ur3m3bIwui7aOkzO962uipGbEviLilsWtX78AKTQ9JERx0eKZXp1lZQxh2TikpCa3oX49xQOg3Rol2CTmSMFVfaE6IIjMwvvYVVaPzwKlwDYkNfe3y4LZLr4WLmD6In7NnAEFS96JSkh3e3HGNl6Lz5tggUhGefXanbhWGhGS9b0Txgiz0nMAtGKRtVLJz4r06nLk5UrIL3y1gMIJfeySpTdUTpbkfzbplowNuL7iRS83sEp8Uroo9KrtEtFcKCCNXXa0z522YxCYsTW177RrTp4Hh6pRia8qJS8vd65qP9WbM3ucMD2UBaERmgw2vwleBvrQdW6ifhSwU2goM2XSwJ00e1r70GqWaliFMg9zvRDUtrYJCrHKDk2bOJyOGrfJXAh3QOQFaWJ7SGobF7eLQSahFJf4joGoWFP0WwMFnZkHsdpYokymL7QTTisVHBByyNEMBxk8PWoY3EoUQUNd5bFWgDiKYRWJXHmx8QdhJCc8V4oyg761nVF80bLkHejfYIpE5hKuUdwP4wondcsHu1awJXQW974f0qWYbTb4gVbnUHIwrpQfTv503IwpvNCUjDlzajAYNFFIjPhYUO8NYO3XbHQdS4QCIJTu6oo6wkwhtHTv8x4c9yXjsFaM30jkY9yJLSUzS6CR10AVc8IAnA7mv9LiyaOTIAg3anMEMNivPqEt2qNJxiW4pJ5x9RDPUxBl163KdAjqi5hZPWBgqZgdJaDb7f78cJuG2H6AS2YW3J5yz8VxiJ7ImPzFyNdTbRjFwqG'),
+(2,'jbon','Jean','BON','$2y$10$CdeW19EVV4nX7MeEA.0pHeI/Yn7w0QsvqcJNILCp5oJOhf.gPfNvG',0,'9HKp7pM4witb6iApzH0bFYc9dKsSszOCRbXuc5mRIH00nJjkbbtVsk73hRM8GPzhWKNuNt5N7B1iQ14zGvjdjrHnJGWPeXsFlzsXN664GzI2EOa3CfMKT6pvYc6EanAZN8WCFTGHgeWyTOiQvbTxGl08gbPnoRW58HGViHYJvYOVtuMuKVlNjjuzt8NxQSXF3qM5dtUrxsKVqrIciosuPWVosEHOgI2ygFAXDA6w07oQds6n38Jixyb3u5J1fEs6Fpqp8bHbjXh9204cVN1caFLUUytcT3ocgClpriyejMgvUlckMRmJacDm310sFmBWnKWoIH70Lc5IE5bnh6WVpoGkAnqYzq5CNvarygodxU6RHlneG0Xql2jZkjm4drqhitvOA6J4hRfhw72pKDs8daRYcq5A69eF79yyGVsVzILAdGAZfEzTlA3rb3CnrKCZBoHdsEidovXYcRqqqV9Oq8hLHo5mRquya6dtdYghEuPy5aCgAT6fgxdsTon0hK9Hu3ywzKBd4oCNlmKv8LEYaJBZ2eSOPKItpXyy07vAOieuLFeOgfW9dtHkfRcuZpCdZDTuEniDmX3jd7r3YLBNOzMLxeOr6Td6l9Vy8N4KLjzJW1aFqZjdlJNeA5rjdqDNDWIkESS8RYjAxBUICXUvdjLJrfmT7xpL1qeYZaDSdHeh87lFhL5V9YWzqeuDlASabRZvNSUdhNQF42CSZOM7TFfPFStC6MtCKanzlM1NXygEpMe3iopTDhVV5MiyGZ3zethC284DOq03hBEPinj54rGgn2QF0yEynZUiruA4vYIdqRvSXoNMrGu6IE57U8a3EDCj2RBtQV3eq1YmZ7Utb3R33Ziux3IOuskHxAt0kNI76i89JIqLLeOCVWY8AEnwseQITvDcwfesQbebAkodio6PkXKK681GgH7FajQDa60QuxpzH5qxE50Zk1H2QbKdmP92BdK4k9yggf1bdHth8ekyKXI1ahU9BER9eRhV'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$Q1BQYmwv3xsDAlUPROJbVOK3M0Nktt3ZUGb.xB1G14cy9WRC/afCO',0,'E3UtJXyijk81qwBPq7dCKuMXlRvyWyIiMEGNyD06afGL0q6wQZT5guzyM9SrelSJL7SyMX5x22xpA5jQRJrEyeKQW0HSZxdFroTvLH4HMMBWUKA3JKpK9KELq4jQ1y5epMxQrrwmxmxWd6mmcla09MyGplHfeK3r3nsxgrBOFWkp3wffmhqzMjpHJnudhXItZfhZCkG8U2gUgAfUy7uYCqZea2fnfgXPwbhJlL1cl6D5zqq1cVV15zy6elugkmPMKwPRpgFadv9i7WuNrMsSuWVC4CiBSMQi5TZfzSqmrXSWZGztF1aDRm1thqksuZ33j5xBEysunn7y12JmwMpSxeDSWeFXC6utQTEprZ837TVQKAnG2XvP4zAqtBUZMmxkYn5gq2LZohf2V4HYdPjeWwAfEh4kouVi6Pahbv5GLRnA6pI4qtxjX9uh3eK5ZW8O7ayfF28R2fiDSnPZvPGJt2NA4OXAdMJnwzPNu6ijPs9vnfQPn8yHY4AqEER4zgKINWWstBuwwanDrwbcufxfufkH8F45d7W37jHWVfq6ZEFvQwtJuUYS7W4SZUiORZUKOHZhoNWhih40spigxUMstbc9CZtylI1uGqBR0XoZYo2AWMA5POP7yBn3psaVT4y9erc3QLjMNOZsJwbUeFbOkZDeRVIh8qIotf0EVKbR5odKSqOczsFafhXGnAYVffPnryigEC5B7qOBjzW8GjIwXg12WrtDmAP0EI5LBR3NR7qa6abXJzn4iEgimwnKqSm9vIvukQJFWZL40QGegL7MNypn3PD8fWfESVmAmRkiUAmASuCmMObKWLEZI3umaz0KzmxMBCvinKFMxkZLnIs75OY4Og91LTibU3t6vqIJnmSXE4oP8oNp1MikGlySnofwRGTo7YEJRaYHaCmzu3Qb3sHzkDsTNw7vlHo6LzdpTMOZCqSPLzw4IFZLpIpMrvgFXQALCBgkIyno0IipLMz8R3ReTIGBUJhnj19CMgEl'),
+(4,'mpage','Marc','PAGE','$2y$10$ICcnwNXb.0ysJ/dE5U813.iA1sNDV1tjqD430J8Syny7fbUND2sqS',1,'z19QXTAB1U9FeE6o9e5eXK4V78vQUX6XsPubalazgrPBumCpyUEUHBHWjYRTyVPGbRMt0usyeAmoapwTrkKuS2H0J6SXyHJxPUwymH1cAeSUWFfSrbvMBxxxxdzB2tqr1UakuZxpFGLxECOlmo8hvqXaLOUzryzyyjE6yfGMhZB0mGnDe50lElaPI0mFLpEQyA9KZYWqs9QgI2Ni0KdnUzEjGztUl85dYaiRKd2HnG9yy0tHdnpqwx1f3U3uXFwUEIwqoYjixTU7bealJf8lZ6115wL1OUCgPYaoEZlDwLRrsy5TUI4j2RqfXmXJIqUYuRnG5pcb6G0lj19e6EcJFuleNjWmqdfseiieuImXx7MAOuredMmrwXdK08Is4yxn9NwMZoTFRJvtWHFm7XaQjCgH5IbJfx01gyXuIpYCWWb6flWRERVAiGi1Uc9iVQwxEwLrmz9hENYjAJyRR9yBXEujHGMzKGwn0nji0tkRlTOS6Vt5LuAFK5mR4hPVI801SvFXFLXcbuwimuCMROVHPHp9X3C8nnFmunLKXHMYaCO7YsUI6KVToImACqgy7uTi31CHYl2DfAu3mh4rcvUuH9p2Ip88r0SQ3roWRX0Ssri9AeUpAhRUQmSjcMlsziz9BpouMK9RB9kByOWsCY3gWWf1Db4ZqRqjYojNJcJbrOihirPjpSIiQmlsNpX9x6OYiaf8V4XHmVQ0v5AWXicuUaBu0PledwDBkXWEaQAmmzZFTMytq75beHGFG6kJPzTlurNPuGu2MJ2Ci2hlJ6J9G9oSjue6PKWfSu6vRlm9I2MIJyTtjXSeuPu8UMZ96TCF6Lo6S5jsAEpklHMCO5p5mmFlTCC8nNupZBVSqngg1Lh1ymDOvNx9XpxsK91UX4ValX3L5KsylsHhuC8uNtbIoFWYocznDv7nKA331oi0s21jzYjwiuD3nlnG5p5gRoWkJu6UK5d4XbzIvCaViAqpgyFPdmgxIkP5xCmxNHq2'),
+(5,'max','Max','Doualle','$2y$10$dyfMGpcZvg/A4haI8IIS8OpVHsLgcLnTFUCf32RA6JWvPjeeguafy',0,'FrCWHnmIZbCz0hkfoRLpX4oZRoy7WHuosk5A3rtzhGv8QkaloTnfG69gtY5MMBBobmUv5cBkpZyNfeJdOKVsbNbCCLeNZKqMpTR04MAt3C8UqP3UIQuYK4kr5ZgaxPPFfJ07FQMYLWG3B3kM59ZTwS4t0usBC7kxhl6jdNUcST3tfXpfk9JeorNjz5fFOBEOdmaz01Uq0HzTyLhzKTntHfvR2lrZIV1JG7b5Mz8qCcrADTCEjE6PsXgga5JKjRCID2zySqMfifjWCQqQZMp0stco25DuLCiYR4SUMrj5aCPk6zv5o5OTkU6aH8I9d1x7PN8FyQ3v7vVswCkvDA8lcBOSiry3jdgtt6lRSLgpROVuzljnzQVDrn24gbYPSOO0WPEuegv7qhMGl9tBOEvPi5h6wK5jp8WFqlujqGVpowW75ZvCKYCbHx3le7VsCn7ruOLpFPt0YIpaCNRL9kcN2k9UVaRE1tyZqknrZ0dCjPG4KOzthAywEPhAsAmYLgXoMRDPayS40rGtbKjGtV6JMULlzjGSDXvP2SOVdAYQQ4EUAUuTFbdXsNXIwce6wbTqNeGbWXIIKvxR6VYm1gS5e3nOwQOjNJjXGnoMgPy77zjWq9Zh7kmUAVgF4SuXDSeRIT16l4klv8kAEgD5RWFOZMzRzR2fE5AnJv8jeuDET3oftQ9Ecca3mH9SrwbMsMwAdK9rCd5oovUDlrQ7AgIotlVHPvmJfHt99ZI3uulu1AuZcC0WZMy4WSt363nOwOkM8KpjVQKSi5JyRSJkyCMNFmA5UoeLHsnsUwmBePBqLwJF69rnNXdcNC8gEdLj6AjJvwk76XOKgRhAB7QEs0EE61BB0PsbRvnjynp879LvYkMqmEw0A2BUHTP80vdpWudJu6iFTFcrJ0W6DfqKo7TYMTU0pBIZ7BWWAQgppI64vnRsWjCVGZEFcmYtOiaWBuds2eTkh0UOaMK9UdbvV9YZF5SqLPrwFLCpPuROEtfm')
+
+07/03/2024 - 13:10:10, ::1 , DELETE FROM user
+07/03/2024 - 13:10:11, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked,salt)
+VALUES
+(1,'kqui','Kevin','QUI','$2y$10$74QoZKAm/aoP5p178byL9urnVk1/Tp3WaCDumMOA9l2JawCnlofua',0,'DeGHaTriHvvmCu0XW43jIn81wADJM0FoS6hvCI4Jzt7NyNqU0F'),
+(2,'jbon','Jean','BON','$2y$10$QlQE9kK3s0DpEspnqeGgR.rItOyOSDgFSaco8XJB2jklZYZINbH1a',0,'65c4yIxPiAzIcnTiZmkgLqqwYCOqJlEoeQbYgpjkwnK06lmwLY'),
+(3,'echirac','Evelyne','CHIRAC','$2y$10$NwUyyPWzlIq2mz5E//pOAuOQlxT0ohKUoHKiH208hy/9.odK.DW.m',0,'tFLlkX01VrSafVYom6JPPd4RHPNzukS7k9q0R7ECedLNjMkyiN'),
+(4,'mpage','Marc','PAGE','$2y$10$0Xq9dDDWDS9BzrhZffbjjO86Npno0ggEzdoJFiqU5Jo5wKAuEHpu.',1,'mrgEzMUxn7ksCJc49FPuuUGkeCOJYQxIhMk9YGrEUV7zQwUZPq'),
+(5,'max','Max','Doualle','$2y$10$xWtXQKAEVtdSXXtDgaDXYuMubdAxwOzj63uYQ6RzbIJ1ZML6oMuuC',0,'MkIfxNq9SoOf6pXGFWgmropvjAk2bteaf5LqBZlt4KwviY5Rnh')
+
+07/03/2024 - 13:10:16, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 13:10:16, ::1 , UPDATE user SET failures = 0 WHERE user = max
