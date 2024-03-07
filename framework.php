@@ -6,32 +6,41 @@ $database = new SQLite3('../database.db3');
 
 // SQL
 /* function sql_exec($database,$query) {
+    addLog($query);
     return $database->exec($query);
 } 
 function sql_select($database,$select) {
+    addLog($select);
     $results = $database->query($select);
     $rows=[];
     while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
         $rows[] = $row;
     }
     return $rows;
-} */
+}  */
 
 
-function sql_exec($database,$query,$tabNameBind, $tabValueBind) {
+function sql_exec($database,$query,$tabValue) {
+    $sqlLog = $query;
     $statement = $database->prepare($query); 
-    var_dump($tabNameBind);
-    for ($i=0; $i < count($tabValueBind); $i++) { 
-        $statement->bindValue(":".$tabNameBind[$i], $tabValueBind[$i]); 
+    for ($i=0; $i < count($tabValue); $i++) { 
+        $sqlLog = str_replace(":".$tabValue[$i][0],$tabValue[$i][1],$sqlLog);
+        $statement->bindValue(":".$tabValue[$i][0], $tabValue[$i][1], $tabValue[$i][2]); 
     }
+    addLog($sqlLog);
+
     return $statement->execute();
 }
 
-function sql_select($database,$select,$tabNameBind, $tabValueBind) {
+function sql_select($database,$select, $tabValue) {
+    $sqlLog = $select;
     $statement = $database->prepare($select);
-    for ($i=0; $i < count($tabValueBind); $i++) { 
-        $statement->bindValue(":".$tabNameBind[$i], $tabValueBind[$i]); 
+    for ($i=0; $i < count($tabValue); $i++) { 
+        $sqlLog = str_replace(":".$tabValue[$i][0],$tabValue[$i][1],$sqlLog);
+        $statement->bindValue(":".$tabValue[$i][0], $tabValue[$i][1],$tabValue[$i][2]); 
     }
+    addLog($sqlLog);
+
     $result = $statement->execute();
     $rows=[];
     while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
@@ -40,7 +49,7 @@ function sql_select($database,$select,$tabNameBind, $tabValueBind) {
     return $rows;
     
 } 
-
+ 
 // HTTP
 function http_get_method() {
     return $_SERVER['REQUEST_METHOD'];
@@ -179,4 +188,12 @@ $version_html
 END;
 exit($page);
 }
+
+function addLog($sql)  {
+    $userIp = $_SERVER['REMOTE_ADDR'];
+    $sql = date("d/m/o - H:i:s").", $userIp , ".$sql;
+    $sql = $sql."\n";
+    file_put_contents('../sql.log', $sql, FILE_APPEND);
+}
+
 

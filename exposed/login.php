@@ -100,22 +100,28 @@ END;
     sql_exec($database,$user_raz_failures_query);
      }
     
-}  */
-
+}
+ */
 
 
 function user_block($database) {
     $user_block_query = "UPDATE user SET blocked = 1 WHERE user =:user";
-    sql_exec($database,$user_block_query,['user'],[$_POST['user']]);
+    $tab = [];
+    $tab[] = ["user",$_POST['user'],SQLITE3_TEXT];
+    sql_exec($database,$user_block_query,$tab);
 }
 function user_increment_failures($database) {
     $user_increment_failures_query = "UPDATE user SET failures = failures + 1 WHERE user = :user";
-        sql_exec($database,$user_increment_failures_query,['user'],[$_POST['user']]);
+    $tab = [];
+    $tab[] = ["user",$_POST['user'],SQLITE3_TEXT];
+    sql_exec($database,$user_increment_failures_query,$tab);
 }
 
 function user_state($database) {
     $user_state_query = "SELECT * FROM user WHERE user =:user;";
-    $user_state = sql_select($database,$user_state_query,['user'],[$_POST['user']]);
+    $tab = [];
+    $tab[] = ["user",$_POST['user'],SQLITE3_TEXT];
+    $user_state = sql_select($database,$user_state_query,$tab);
     if (count($user_state) === 0) {
         return FALSE;
     }
@@ -123,21 +129,29 @@ function user_state($database) {
 } 
 
 function user_access($database) {
-    $user_access_query = "SELECT * FROM user WHERE user =:user AND password =:password AND blocked = 0";
+    $user_access_query = "SELECT * FROM user WHERE user =:user AND blocked = 0";
+
+    $tab = [];
+    $tab[] = ["user",$_POST['user'],SQLITE3_TEXT];
     
-    $sql_result=sql_select($database,$user_access_query,['user','password'],[$_POST['user'],$_POST['password']]);
+    $sql_result=sql_select($database,$user_access_query,$tab);
     if ($sql_result) {
+        $password = "verif".$_POST['password'];
         //return sql_select($database,$user_access_query)[0];
-        return $sql_result[0];
+        if( password_verify($password,$sql_result[0]['password']) ){
+            return $sql_result[0];
+        }
     }
     return FALSE;
 }
 
 function user_raz_failures($database) {
     $user_raz_failures_query = "UPDATE user SET failures = 0 WHERE user = :user";
+    $tab = [];
+    $tab[] = ["user",$_POST['user'],SQLITE3_TEXT];
 
-    sql_exec($database,$user_raz_failures_query,['user'],[$_POST['user']]);
-} 
+    sql_exec($database,$user_raz_failures_query,$tab);
+}  
 
 
 

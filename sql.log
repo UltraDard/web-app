@@ -1,0 +1,348 @@
+05/03/2024, ::1 , DELETE FROM user
+05/03/2024, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage AND password =livRE AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage AND password =forgeted AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage AND password =forgeted AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =jbon AND password =cUit AND blocked = 0
+05/03/2024, ::1 , UPDATE user SET failures = 0 WHERE user = jbon
+05/03/2024, ::1 , SELECT * FROM user WHERE user =nobody AND password = AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =nobody;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =nobody AND password =nobody AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =nobody;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac AND password =president AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac;
+05/03/2024, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac AND password =cUit AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac;
+05/03/2024, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac AND password = AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac;
+05/03/2024, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+05/03/2024, ::1 , UPDATE user SET blocked = 1 WHERE user =echirac
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac AND password =President AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac;
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac AND password =President AND blocked = 0
+05/03/2024, ::1 , SELECT * FROM user WHERE user =echirac;
+05/03/2024 - 15:22:23, ::1 , DELETE FROM user
+05/03/2024 - 15:22:23, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+05/03/2024 - 15:22:27, ::1 , SELECT * FROM user WHERE user =mpage AND password =livRE AND blocked = 0
+05/03/2024 - 15:22:27, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024 - 15:22:32, ::1 , SELECT * FROM user WHERE user =mpage AND password =forgeted AND blocked = 0
+05/03/2024 - 15:22:32, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024 - 15:22:35, ::1 , SELECT * FROM user WHERE user =mpage AND password =forgeted AND blocked = 0
+05/03/2024 - 15:22:35, ::1 , SELECT * FROM user WHERE user =mpage;
+05/03/2024 - 15:22:38, ::1 , SELECT * FROM user WHERE user =jbon AND password =cUit AND blocked = 0
+05/03/2024 - 15:22:38, ::1 , UPDATE user SET failures = 0 WHERE user = jbon
+05/03/2024 - 15:22:56, ::1 , SELECT * FROM user WHERE user =nobody AND password = AND blocked = 0
+05/03/2024 - 15:22:56, ::1 , SELECT * FROM user WHERE user =nobody;
+05/03/2024 - 15:23:23, ::1 , SELECT * FROM user WHERE user =' and drop * -- AND password =' and drop * -- AND blocked = 0
+05/03/2024 - 15:23:23, ::1 , SELECT * FROM user WHERE user =' and drop * --;
+07/03/2024 - 08:45:50, ::1 , SELECT * FROM user WHERE user =mpage AND password =efreg AND blocked = 0
+07/03/2024 - 08:45:50, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 08:53:05, ::1 , SELECT * FROM user WHERE user =' DELETE FROM user -- AND password =' DELETE FROM user -- AND blocked = 0
+07/03/2024 - 08:53:05, ::1 , SELECT * FROM user WHERE user =' DELETE FROM user --;
+07/03/2024 - 08:53:20, ::1 , SELECT * FROM user WHERE user ='; DELETE FROM user -- AND password ='; DELETE FROM user -- AND blocked = 0
+07/03/2024 - 08:53:20, ::1 , SELECT * FROM user WHERE user ='; DELETE FROM user --;
+07/03/2024 - 08:55:00, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked) VALUES (5,'max','Max','Doualle','',0)
+07/03/2024 - 08:55:49, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked) VALUES (5,'max','Max','Doualle','$2y$10$IyR3uEw5rNjQx3F.cdpCXuGcGdc.FPqCsxcKnHEC71v/Sm64Ctz8y',0)
+07/03/2024 - 08:57:19, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$nzuQSAU1IxDhtD51.uwhPeE2Ir/DvW3vA/ld9E7niARHzj4FCx1km',0)
+07/03/2024 - 09:00:23, ::1 , SELECT * FROM user WHERE user = '' or true --' AND password =  '' or true --' AND blocked = 0
+07/03/2024 - 09:04:46, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,4,5,6,7 --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:04:46, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,4,5,6,7 --'
+07/03/2024 - 09:05:52, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,4,5,6,7 FROM user  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:05:52, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,4,5,6,7 FROM user  --'
+07/03/2024 - 09:07:05, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT null,null,null,null,user,password,null FROM user  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:07:44, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,user,password,6,7 FROM user  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:07:44, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,user,password,6,7 FROM user  --'
+07/03/2024 - 09:08:39, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,user,password,6,7 FROM user LIMIT 1 OFFSET 1  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:08:39, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,user,password,6,7 FROM user LIMIT 1 OFFSET 1  --'
+07/03/2024 - 09:36:04, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$ndRlngApZWRxLeVn3Iont.sNp7Zm.2PGtyd7Ihp8JU7ay3euVzC9.',0)
+07/03/2024 - 09:37:41, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$LTTBIlZLHaKJFJe3SUJljezcukBzJUA/QUs6hRbRhs4.yvDLEPAEe',0)
+07/03/2024 - 09:38:50, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user LIMIT 1 OFFSET 1  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:38:50, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user LIMIT 1 OFFSET 1  --'
+07/03/2024 - 09:39:46, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$KBeLJAg/TloGftVZI8wULOun/z9eeqjmuT3Wzrw.3EKht4H.BkK32',0);
+07/03/2024 - 09:40:50, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$rVh6uE1Ucidis4V/oml/iefnVK.um3XpbrsDZOpEjghBAeaN62P/y',0),
+07/03/2024 - 09:41:14, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$d/kBqgvVP.MQ7B7aUhG/u.Flbel0JJs5I.izHiKQYfqLEUqIzLjPy',0),
+07/03/2024 - 09:41:17, ::1 , DELETE FROM user
+07/03/2024 - 09:41:17, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:41:44, ::1 , DELETE FROM user
+07/03/2024 - 09:41:44, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:41:49, ::1 , DELETE FROM user
+07/03/2024 - 09:41:49, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:41:50, ::1 , DELETE FROM user
+07/03/2024 - 09:41:50, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:41:50, ::1 , DELETE FROM user
+07/03/2024 - 09:41:50, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:41:50, ::1 , DELETE FROM user
+07/03/2024 - 09:41:50, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'kqui','Kevin','QUI','manGe',0),
+(2,'jbon','Jean','BON','cUit',0),
+(3,'echirac','Evelyne','CHIRAC','President',0),
+(4,'mpage','Marc','PAGE','livRE',1)
+07/03/2024 - 09:42:36, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$xWkh92Yj.NxSnrRckUaDsOhJ1MSy1riFHnLUNcT.V0EigJUyKqDKG',0),
+07/03/2024 - 09:42:37, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$jUlCP/ElpYqlqEMAvxlUnOameKV6ioIMneqVtpetB2OmtweDpp/nu',0),
+07/03/2024 - 09:42:37, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$7tWsqm366ZyxWlmBgo5ffeCgeW1FJ1sfnv.d6YP.me8vn81ugFA7q',0),
+07/03/2024 - 09:42:38, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$v.dt9ml1VyBdYWdY7QqwbOHjQG52R0s.3FznZHrUWRp9.FwOz4PTq',0),
+07/03/2024 - 09:42:38, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$vPoZKJXWdnXzH2VBXVZD7uXEY9Elst2A041DbDKjWZdf2yrI5YaeG',0),
+07/03/2024 - 09:42:38, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$EhT4PD.U6hNSU/lvH6FrGeyXBjeK6WUp/t7C6/98DYbRZQY5YSq/S',0),
+07/03/2024 - 09:42:38, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$JKNZ/LPUehNfUrNoD5U/IO9klUQMdya/sydkBdTDzb1v/bfw9CsPe',0),
+07/03/2024 - 09:42:39, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$WSc9FAktjvmbtuIXhVYkOe7TkoSKvFt.ySKoZU2/Ig9qKtjL8a45a',0),
+07/03/2024 - 09:42:39, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$TNcVi8IV2jvVfMM3jHTd8.axfY1lxsvnDMoUf48Si4HWJKCDDVC/u',0),
+07/03/2024 - 09:42:39, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$UCAhfAIv9desrIOWJlo4N..EOcCXt9U3K32D5XJyg6kGFv2qE2IzG',0),
+07/03/2024 - 09:42:39, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$q/giZp76jK8SvArD7r/wBuxWJWxNITPaAT05VcL0SUeyQIVUDgwfK',0),
+07/03/2024 - 09:42:39, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$/XpF5CY3LYjTOVSmxRjen.QwHxM9WmChQJBFXcuQzdrSXLlEudrNy',0),
+07/03/2024 - 09:43:05, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$1oY22.Nx3ne2aiUHvZakseDVKHtS3bEF5YpoGV23iUAZElrTTGIPq',0),
+07/03/2024 - 09:43:06, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$eNJzudLOaV.CM4FoVsCWXeBaYdJHFNz9cTGvPLUrntWjxvpBcJISa',0),
+07/03/2024 - 09:43:50, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$60QSqvd.NcpWcFGgmHn8ruw6Q0NoXlEnicLVumxJIcB.c4VCZHdXi',0)
+07/03/2024 - 09:45:50, ::1 , SELECT * FROM user WHERE user = '' UNION SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user GROUP BY password  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:45:50, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user GROUP BY password  --'
+07/03/2024 - 09:47:20, ::1 , SELECT * FROM user WHERE user = '' UNION ALL SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user  --' AND password =  '' AND blocked = 0
+07/03/2024 - 09:47:20, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION ALL SELECT 1,2,3,first_name||last_name,user||password,6,7 FROM user  --'
+07/03/2024 - 09:50:14, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+('5','max','Max','Doualle','$2y$10$UUKhHhJ7O6Tch9F/vUgZL.4t78A64BjPtvlCCzFoHp2eceCPcqSXe',0)
+07/03/2024 - 09:51:30, ::1 , SELECT * FROM user WHERE user = 'max' AND password =  'test' AND blocked = 0
+07/03/2024 - 09:51:30, ::1 , SELECT * FROM user WHERE user = 'max'
+07/03/2024 - 09:51:30, ::1 , UPDATE user SET failures = failures + 1 WHERE user = 'max'
+07/03/2024 - 09:55:53, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$HzlEfXmE9/5bJuy2kceOjuxt5cRYDU9IFIKh3cuJfo6PCB7DaZeV.',0);
+07/03/2024 - 09:55:54, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$FM0uRS8MNJuVVYo4gwgdN.iJbV27Tt3zzz8wf2ObeyJgeYMSrfAga',0);
+07/03/2024 - 09:55:54, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$S6tBVTzwI0EamKthplCg6ebhI6AYoGnMOO5jBZ.bBx5m2PXm.pWLS',0);
+07/03/2024 - 09:55:55, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$Nua6snyMVOFiE0vICJ0V1.OCGBxQF6ubH01nILcGLMad5Xjd.AAhO',0);
+07/03/2024 - 09:56:31, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$WiN.vPY18LyJ5yPd/qyuEOK8M7hQ3zwo/6BBX3PaapIfpYYufvEDS',0);
+07/03/2024 - 09:56:32, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('max','Max','Doualle','$2y$10$l6h23w9O2SSvIzIhzbyqqudM6XCABIirobJz3wKxzyk/0bBk5SJmy',0);
+07/03/2024 - 09:57:04, ::1 , INSERT INTO user (user,first_name,last_name,password,blocked) VALUES ('maxx','Max','Doualle','$2y$10$scFMpy2C3GP1EWnui3ZjX.A.ThT7L1bjVlSrshbyrjgaRDuCg5Zgm',0);
+07/03/2024 - 09:58:48, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,sqlite_version,5,6,7 --();' AND password =  '' AND blocked = 0
+07/03/2024 - 09:59:47, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,sqlite_version(),5,6,7 --;' AND password =  '' AND blocked = 0
+07/03/2024 - 09:59:47, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION select 1,2,3,sqlite_version(),5,6,7 --;'
+07/03/2024 - 10:01:54, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,sql,5,6,7 FROM sqlite_schema--;' AND password =  '' AND blocked = 0
+07/03/2024 - 10:02:12, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,sql,5,6,7 FROM sqlite_schema --;' AND password =  '' AND blocked = 0
+07/03/2024 - 10:02:47, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,sql,5,6,7 FROM sqlite_master--;' AND password =  '' AND blocked = 0
+07/03/2024 - 10:02:47, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION select 1,2,3,sql,5,6,7 FROM sqlite_master--;'
+07/03/2024 - 10:05:29, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --;' AND password =  '' AND blocked = 0
+07/03/2024 - 10:05:29, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --;'
+07/03/2024 - 10:06:08, ::1 , SELECT * FROM user WHERE user = '' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --;' AND password =  '' AND blocked = 0
+07/03/2024 - 10:06:08, ::1 , UPDATE user SET failures = 0 WHERE user = '' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --;'
+07/03/2024 - 10:10:22, ::1 , SELECT * FROM user WHERE user =' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --; AND password = AND blocked = 0
+07/03/2024 - 10:10:22, ::1 , SELECT * FROM user WHERE user =' UNION select 1,2,3,group_concat(sql),5,6,7 FROM sqlite_master --;;
+07/03/2024 - 10:14:09, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:14:09, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:14:22, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:14:22, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:14:22, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:14:27, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:14:27, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:14:27, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:14:33, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:14:33, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:15:16, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:15:16, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:17:03, ::1 , DELETE FROM user
+07/03/2024 - 10:17:03, ::1 , INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(2,'jbon','Jean','BON','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(3,'echirac','Evelyne','{password_hash('mdp',PASSWORD_BCRYPT)}','President',0),
+(4,'mpage','Marc','PAGE','{password_hash('mdp',PASSWORD_BCRYPT)}',1)
+07/03/2024 - 10:31:30, ::1 , DELETE FROM user
+07/03/2024 - 10:31:30, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(2,'jbon','Jean','BON','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(3,'echirac','Evelyne','{password_hash('mdp',PASSWORD_BCRYPT)}','President',0),
+(4,'mpage','Marc','PAGE','{password_hash('mdp',PASSWORD_BCRYPT)}',1)
+
+07/03/2024 - 10:31:31, ::1 , DELETE FROM user
+07/03/2024 - 10:31:31, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(2,'jbon','Jean','BON','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(3,'echirac','Evelyne','{password_hash('mdp',PASSWORD_BCRYPT)}','President',0),
+(4,'mpage','Marc','PAGE','{password_hash('mdp',PASSWORD_BCRYPT)}',1)
+
+07/03/2024 - 10:32:07, ::1 , DELETE FROM user
+07/03/2024 - 10:32:07, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(2,'jbon','Jean','BON','{password_hash('mdp',PASSWORD_BCRYPT)}',0),
+(3,'echirac','Evelyne','{password_hash('mdp',PASSWORD_BCRYPT)}','President',0),
+(4,'mpage','Marc','PAGE','{password_hash('mdp',PASSWORD_BCRYPT)}',1)
+
+07/03/2024 - 10:33:52, ::1 , DELETE FROM user
+07/03/2024 - 10:33:52, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','$2y$10$.9yYjQcO3i4/DdlvmqbWquuiTO3Np4GWNqOkLgaW5TVTMzObzGPfK',0),
+(2,'jbon','Jean','BON','$2y$10$PMubjxumCyluj6wjdkF3RuIvHb..OIqkP.E6v6mbDUrZq51BbBigq',0),
+(3,'echirac','Evelyne','$2y$10$WpzWhdBgaeDRtXfsDI9Y6usT0t0.nVDflZv8p9BKT7wYi3FVBTvEW','President',0),
+(4,'mpage','Marc','PAGE','$2y$10$Wxhgwm0BQx97WCcO5RboH.fpDIOMAuW30S0P4MdgVhFb6ZQZN/Fxq',1)
+
+07/03/2024 - 10:34:24, ::1 , DELETE FROM user
+07/03/2024 - 10:34:25, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','$2y$10$2HRWWi4p56wpuyTybSxP/eAu3snhT6GXYsenq.x092f4P.I37Hahm',0),
+(2,'jbon','Jean','BON','$2y$10$ZydXu0eFqp.tsuROlEoaJO4BPJ2ir07wIQbHSeJS4Vwh34yCSU.S.',0),
+(3,'echirac','Evelyne','EVE','$2y$10$ztgT4274DmIyXiDYBoP46ulWtILo3eSVYmmegIhI1cISaZTnR8s0S',0),
+(4,'mpage','Marc','PAGE','$2y$10$FDoPiu2KhirhX/PCRcSiUufaC4tJUf7IEwhQJ.0kaDCmRZa/.8t7O',1)
+
+07/03/2024 - 10:35:07, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:35:07, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:35:22, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 10:35:22, ::1 , UPDATE user SET failures = 0 WHERE user = jbon
+07/03/2024 - 10:48:15, ::1 , SELECT * FROM user WHERE user = AND blocked = 0
+07/03/2024 - 10:48:15, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:49:06, ::1 , DELETE FROM user
+07/03/2024 - 10:49:06, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','$2y$10$oi5urHN7sbQMvT8C2qCKd.8FexRfSoszTLSFu7LKFKWn9ZlFbYOv2',0),
+(2,'jbon','Jean','BON','$2y$10$oZcP5kl5a6lACnkcZXOqs./ftnOTmGJ2isX74Ihu.DOQUGETCmCKK',0),
+(3,'echirac','Evelyne','EVE','$2y$10$0YGRiTPyLivtdZDR1CElS.hDCQCgidIdVT1T61k/Gjlui0A0HoBlq',0),
+(4,'mpage','Marc','PAGE','$2y$10$/48iYjte64Fjdkz/IGyAJeIXRthgzRYZC0r0PEYsocBN8GFQjaKWC',1)
+
+07/03/2024 - 10:49:06, ::1 , SELECT * FROM user WHERE user = AND blocked = 0
+07/03/2024 - 10:49:06, ::1 , SELECT * FROM user WHERE user =;
+07/03/2024 - 10:49:07, ::1 , SELECT * FROM user WHERE user = AND blocked = 0
+07/03/2024 - 10:49:07, ::1 , SELECT * FROM user WHERE user =;
+07/03/2024 - 10:49:08, ::1 , SELECT * FROM user WHERE user = AND blocked = 0
+07/03/2024 - 10:49:08, ::1 , SELECT * FROM user WHERE user =;
+07/03/2024 - 10:49:09, ::1 , SELECT * FROM user WHERE user = AND blocked = 0
+07/03/2024 - 10:49:09, ::1 , SELECT * FROM user WHERE user =;
+07/03/2024 - 10:49:09, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 10:49:50, ::1 , DELETE FROM user
+07/03/2024 - 10:49:50, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','$2y$10$Lj7IMdkQ.iiFzxwiNoX8DevE1dMuX51TOsw76GB7odEJr/ZkFGI8a',0),
+(2,'jbon','Jean','BON','$2y$10$RKjiKXYhWIPxS8WI.4iZN.X3IByDn.v8iVLvNs1/sixW.Cf/7qgvO',0),
+(3,'echirac','Evelyne','EVE','$2y$10$mHLt0w/rmqj9EuMMjFOA/.vDpj65IPMdaI2ZV2PgTKVV4MvvPLkWy',0),
+(4,'mpage','Marc','PAGE','$2y$10$csysQInm61dEnTTABgUGYenTkiFNYio6JdiTeYaWF3D0sEJGUON5G',1)
+
+07/03/2024 - 10:49:51, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 10:49:51, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 10:49:52, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 10:49:52, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 10:49:52, ::1 , SELECT * FROM user WHERE user =mpage AND blocked = 0
+07/03/2024 - 10:49:52, ::1 , SELECT * FROM user WHERE user =mpage;
+07/03/2024 - 10:49:53, ::1 , SELECT * FROM user WHERE user =jbon AND blocked = 0
+07/03/2024 - 10:49:53, ::1 , SELECT * FROM user WHERE user =jbon;
+07/03/2024 - 10:49:53, ::1 , UPDATE user SET failures = failures + 1 WHERE user = jbon
+07/03/2024 - 10:49:54, ::1 , SELECT * FROM user WHERE user =echirac AND blocked = 0
+07/03/2024 - 10:49:54, ::1 , SELECT * FROM user WHERE user =echirac;
+07/03/2024 - 10:49:54, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+07/03/2024 - 10:49:55, ::1 , SELECT * FROM user WHERE user =echirac AND blocked = 0
+07/03/2024 - 10:49:56, ::1 , SELECT * FROM user WHERE user =echirac;
+07/03/2024 - 10:49:56, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+07/03/2024 - 10:49:57, ::1 , SELECT * FROM user WHERE user =echirac AND blocked = 0
+07/03/2024 - 10:49:57, ::1 , SELECT * FROM user WHERE user =echirac;
+07/03/2024 - 10:49:57, ::1 , UPDATE user SET failures = failures + 1 WHERE user = echirac
+07/03/2024 - 10:49:57, ::1 , UPDATE user SET blocked = 1 WHERE user =echirac
+07/03/2024 - 10:50:22, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:50:22, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:50:22, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:51:07, ::1 , SELECT * FROM user WHERE user =qsddsd AND blocked = 0
+07/03/2024 - 10:51:07, ::1 , SELECT * FROM user WHERE user =qsddsd;
+07/03/2024 - 10:51:11, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:51:11, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:51:11, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:51:16, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:51:16, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:51:16, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:51:16, ::1 , UPDATE user SET blocked = 1 WHERE user =max
+07/03/2024 - 10:51:32, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:51:33, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:51:33, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:51:39, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:51:39, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:53:29, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:53:29, ::1 , UPDATE user SET failures = 0 WHERE user = max
+07/03/2024 - 10:53:48, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:53:49, ::1 , SELECT * FROM user WHERE user =max;
+07/03/2024 - 10:53:49, ::1 , UPDATE user SET failures = failures + 1 WHERE user = max
+07/03/2024 - 10:54:37, ::1 , DELETE FROM user
+07/03/2024 - 10:54:37, ::1 , 
+INSERT INTO user (id,user,first_name,last_name,password,blocked)
+VALUES
+(1,'max','Max','Doualle','$2y$10$nhbZvj/P9Dhvw5bErjyTJe4D0zxNqpQADlnnOUIe5EPRV6e7iCQ1a',0),
+(2,'jbon','Jean','BON','$2y$10$twdh2TE/2DNDMWleR.7YYOHeekL63hXjH4qXQOixaNi65el00PH7.',0),
+(3,'echirac','Evelyne','EVE','$2y$10$Apst6O0DnlEoPCacqXKZTu/onEKkZ03JM3kyfSw4BhXKsuI1zdaEK',0),
+(4,'mpage','Marc','PAGE','$2y$10$/F16IAKUS.51P6kPMeZxAOyfUZdW6NFokeCWqVZApLODKFwcCecy2',1)
+
+07/03/2024 - 10:54:48, ::1 , SELECT * FROM user WHERE user =max AND blocked = 0
+07/03/2024 - 10:54:48, ::1 , UPDATE user SET failures = 0 WHERE user = max
